@@ -1,22 +1,23 @@
-CONTROLFILE = 'E:\exercise\control.dat'
+DATA_DIR = 'C:\Users\Lance Salmingo\Desktop\ORYZA-IoT\ORYZAv3'
+CONTROLFILE = 'control.dat'
 STRUN = 1
 ENDRUN = 72
 FILEON = 'res.dat'                     ! Output file
 FILEOL = 'model.log'                   ! Log file
-FILEIR = 'E:\exercise\reruns.rer'      ! Rerun file
-FILEIT = 'E:\exercise\standard.exp'    ! Experiment file 
-FILEI1 = 'E:\exercise\standard.crp'    ! Crop file 
-FILEI2 = 'E:\exercise\standard.sol'    ! Soil file
+FILEIR = 'reruns.rer'      ! Rerun file
+FILEIT = 'standard.exp'    ! Experiment file 
+FILEI1 = 'standard.crp'    ! Crop file 
+FILEI2 = 'standard.sol'    ! Soil file
 
 *----------------------------------------------------------------------*
 * Optionally, Weather Station information can be provided here         * 
 * It is useful for large amount of simulations under same management   *
 *----------------------------------------------------------------------*
-*WTRDIR = 'E:\exercise\weather\'   !* Folder name of weather files
+*WTRDIR = 'weather\'   !* Folder name of weather files
 *CNTR = 'PHIL'                     !* Weather station name
 *ISTN = 2                          !* Weather station number
 *MULTIY = 'YES'       !* Whether multiple year weather file is used, 
-                      !* default is ‘NO’ or if the variable do not appear.
+                      !* default is ï¿½NOï¿½ or if the variable do not appear.
 
 *----------------------------------------------------------------------*
 * Rice monoculture cropping system                                     *
