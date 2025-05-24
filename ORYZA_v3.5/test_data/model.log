@@ -1,0 +1,757 @@
+
+ File .\TEST_DATA\RERUNS.RER contains   21 set(s) of  7 variable(s):
+ type sc/ar variable name
+ ---- ----- -------------
+  I     s   IYEAR                          
+  I     s   EMYR                           
+  F     s   STTIME                         
+  I     s   EMD                            
+  F     a   IRMTAB                         
+  F     s   HARFRAC                        
+  F     a   FERTIL                         
+
+ = Data file contents (set 0) selected =
+ Message from RDSETS: A logfile report is written
+ about the use of the 21 parameter sets on .\test_data\reruns.rer
+
+ = Set    1 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Data file   .\TEST_DATA\MANAGE.EXP with  61 variables parsed by RDINDX
+   Variable values have been overwritten by rerun set    1:
+   EMD -----> 6   
+   EMYR -----> 1998   
+   STTIME -----> 1.000   
+   IYEAR -----> 1998   
+ Contents of CONTROL.DAT recovered from TMP file
+ Data file   .\TEST_DATA\CULTIVAR.CRP with  53 variables parsed by RDINDX
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    1:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 1998   
+   EMD -----> 6   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Data file   .\TEST_DATA\SOIL.SOL with  50 variables parsed by RDINDX
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    1:
+   IRMTAB -----> 0.000, 2.000, 35.00, 2.000, 36.00, 3.000, 111.0, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    1:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    2 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    2:
+   EMD -----> 160   
+   EMYR -----> 1998   
+   STTIME -----> 160.0   
+   IYEAR -----> 1998   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    2:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 1998   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    2:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    2:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Rain not available, value set to zero, (patch DvK, Jan 1995)
+
+ = Set    3 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    3:
+   EMD -----> 354   
+   EMYR -----> 1998   
+   STTIME -----> 354.0   
+   IYEAR -----> 1998   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    3:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 1998   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    3:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    3:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    4 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    4:
+   EMD -----> 160   
+   EMYR -----> 1999   
+   STTIME -----> 160.0   
+   IYEAR -----> 1999   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    4:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 1999   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    4:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    4:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    5 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    5:
+   EMD -----> 354   
+   EMYR -----> 1999   
+   STTIME -----> 354.0   
+   IYEAR -----> 1999   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    5:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 1999   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    5:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    5:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    6 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    6:
+   EMD -----> 160   
+   EMYR -----> 2000   
+   STTIME -----> 160.0   
+   IYEAR -----> 2000   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    6:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2000   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    6:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    6:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    7 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    7:
+   EMD -----> 354   
+   EMYR -----> 2000   
+   STTIME -----> 354.0   
+   IYEAR -----> 2000   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    7:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2000   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    7:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    7:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    8 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    8:
+   EMD -----> 160   
+   EMYR -----> 2001   
+   STTIME -----> 160.0   
+   IYEAR -----> 2001   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    8:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2001   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    8:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    8:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set    9 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    9:
+   EMD -----> 354   
+   EMYR -----> 2001   
+   STTIME -----> 354.0   
+   IYEAR -----> 2001   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    9:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2001   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    9:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set    9:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   10 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   10:
+   EMD -----> 160   
+   EMYR -----> 2002   
+   STTIME -----> 160.0   
+   IYEAR -----> 2002   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   10:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2002   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   10:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   10:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   11 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   11:
+   EMD -----> 354   
+   EMYR -----> 2002   
+   STTIME -----> 354.0   
+   IYEAR -----> 2002   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   11:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2002   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   11:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   11:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   12 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   12:
+   EMD -----> 160   
+   EMYR -----> 2003   
+   STTIME -----> 160.0   
+   IYEAR -----> 2003   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   12:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2003   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   12:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   12:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   13 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   13:
+   EMD -----> 354   
+   EMYR -----> 2003   
+   STTIME -----> 354.0   
+   IYEAR -----> 2003   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   13:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2003   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   13:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   13:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   14 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   14:
+   EMD -----> 160   
+   EMYR -----> 2004   
+   STTIME -----> 160.0   
+   IYEAR -----> 2004   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   14:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2004   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   14:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   14:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   15 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   15:
+   EMD -----> 354   
+   EMYR -----> 2004   
+   STTIME -----> 354.0   
+   IYEAR -----> 2004   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   15:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2004   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   15:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   15:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   16 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   16:
+   EMD -----> 160   
+   EMYR -----> 2005   
+   STTIME -----> 160.0   
+   IYEAR -----> 2005   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   16:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2005   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   16:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   16:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   17 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   17:
+   EMD -----> 354   
+   EMYR -----> 2005   
+   STTIME -----> 354.0   
+   IYEAR -----> 2005   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   17:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2005   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   17:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   17:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   18 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   18:
+   EMD -----> 160   
+   EMYR -----> 2006   
+   STTIME -----> 160.0   
+   IYEAR -----> 2006   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   18:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2006   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   18:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   18:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   19 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   19:
+   EMD -----> 354   
+   EMYR -----> 2006   
+   STTIME -----> 354.0   
+   IYEAR -----> 2006   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   19:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2006   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   19:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   19:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   20 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   20:
+   EMD -----> 160   
+   EMYR -----> 2007   
+   STTIME -----> 160.0   
+   IYEAR -----> 2007   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   20:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2007   
+   EMD -----> 160   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   20:
+   IRMTAB -----> 0.000, 0.000, 159.0, 0.000, 160.0, 2.000, 190.0, 2.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   20:
+   FERTIL -----> 11.00, 20.00, 30.00, 20.00, 45.00, 20.00, 76.00, 20.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+
+ = Set   21 of rerun file .\TEST_DATA\RERUNS.RER selected =
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   21:
+   EMD -----> 354   
+   EMYR -----> 2007   
+   STTIME -----> 354.0   
+   IYEAR -----> 2007   
+ Contents of CONTROL.DAT recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   21:
+   HARFRAC -----> 0.8900   
+   EMYR -----> 2007   
+   EMD -----> 354   
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   21:
+   IRMTAB -----> 0.000, 2.000, 18.00, 2.000, 19.00, 3.000, 95.00, 3.000,...
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\CULTIVAR.CRP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+   Variable values have been overwritten by rerun set   21:
+   FERTIL -----> 11.00, 30.00, 30.00, 30.00, 45.00, 30.00, 76.00, 30.00   
+ Contents of .\TEST_DATA\MANAGE.EXP recovered from TMP file
+ Contents of .\TEST_DATA\SOIL.SOL recovered from TMP file
+ Temporary file RD$00001.TMP deleted by RDDTMP
+ Temporary file RD$00002.TMP deleted by RDDTMP
+ Temporary file RD$00003.TMP deleted by RDDTMP
+ Temporary file RD$00004.TMP deleted by RDDTMP
+ Temporary file .\TEST_DATA\RERUNS.TMP deleted by RDDTMP
