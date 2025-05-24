@@ -66,26 +66,57 @@ head(op_data)
 IoTProcessed Data 
 
 # Explore IoT Dataset
-```{r}
+```{r, message=FALSE, warning=FALSE}
 # Since ORYZA takes daily values we get group by day and get the mean values of each parameter
-daily_means <- iot_data %>%
+iot_daily <- iot_data %>%
   # 1) Extract the calendar day from your POSIXct
   mutate(day = as.Date(date)) %>%
   # 2) Group by that day
   group_by(day) %>%
   # 3) Average every numeric column except the original date
   summarise(
-    across(
-      c(temperature, humidity, water_level, N, P, K),    # columns to average
-      ~ mean(.x, na.rm = TRUE),                         # the summary fn
-      .names = "avg_{.col}"                              # rename to avg_temperature, etc.
-    )
+    min_temp = min(temperature, na.rm = TRUE),
+    max_temp = max(temperature, na.rm = TRUE),
+    mean_temp = mean(temperature, na.rm = TRUE)
+    
   ) %>%
   ungroup()
 
 # Inspect
-print(daily_means)
+print(iot_daily)
 
 # Graph
+daily_long <- iot_daily %>%
+  pivot_longer(
+    cols      = c(min_temp, mean_temp, max_temp),
+    names_to  = "stat",
+    values_to = "temp"
+  )
 
+# 2) Plot
+ggplot(daily_long, aes(x = day, y = temp, color = stat)) +
+  geom_line(size = 0.8) +
+  labs(
+    x     = "Date",
+    y     = "Temperature (°C)",
+    linetype = "Statistic",
+    title = "Daily Min, Mean & Max Temperature"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "bottom"
+  )
+```
+# Explore res dataset
+```{r}
+head(res_data)
+names(res_data)
+
+res <- res_data %>%
+  mutate(across(everything(), as.numeric))
+
+res
+# Plot
+ggplot
 ```
