@@ -29,10 +29,12 @@ library(ggplot2)    # For visualisation
 library(conflicted) # For handling library conflicts
 library(lubridate)  # For parsing date values
 library(ggpubr)     # For stat_cor()
+library(readxl)     # For reading excel files
 
 # Load functions to create input files for ORYZA
 source("ORYZA_Model_RTOOLS/Make_EXP_ORYZA.R")
-source("ORYZA_Model_RTOOLS/Make_EXP_ORYZA.R")
+source("ORYZA_Model_RTOOLS/Make_WTH_ORYZA.R")
+source("ORYZA_Model_RTOOLS/Make_SOIL_ORYZA.R")
 
 # Prefer dplyr
 conflict_prefer("filter",  "dplyr")
@@ -48,12 +50,42 @@ knitr::opts_chunk$set(echo = TRUE, error = TRUE, message = FALSE)
 ```{r}
 # Read csv files
 iot_data <- read_csv("./datasets/IoTProcessed_Data.csv")
+res_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", sheet = "res", skip = 1)
+op_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", sheet = "op")
+
+# Fix column naming
+iot_data <- iot_data %>%
+  rename(
+    temperature = tempreature
+  )
 
 head(iot_data)
+head(res_data)
+head(op_data)
 ```
+IoTProcessed Data 
 
 # Explore IoT Dataset
 ```{r}
-df <- iot_data %>%
-  mutate(date = ymd_hms(date))
+# Since ORYZA takes daily values we get group by day and get the mean values of each parameter
+daily_means <- iot_data %>%
+  # 1) Extract the calendar day from your POSIXct
+  mutate(day = as.Date(date)) %>%
+  # 2) Group by that day
+  group_by(day) %>%
+  # 3) Average every numeric column except the original date
+  summarise(
+    across(
+      c(temperature, humidity, water_level, N, P, K),    # columns to average
+      ~ mean(.x, na.rm = TRUE),                         # the summary fn
+      .names = "avg_{.col}"                              # rename to avg_temperature, etc.
+    )
+  ) %>%
+  ungroup()
+
+# Inspect
+print(daily_means)
+
+# Graph
+
 ```
