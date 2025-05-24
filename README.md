@@ -29,4 +29,15 @@ Output will be stored in `\test_data` with the following files
 | op.dat      | contains summarised season results such as<br>final yield, total crop duration, seasonal transpiration<br>and evaporation |
 | res.dat     | daily output of the model during the simulation                                                                           |
 
+Then open `ORYZA Analysis Tool(v4.2).xlsm`
+in the `Main` sheet, change the following:
+A11: `.\working_dir\test_data`
+A12: `.\workiung_dir\test_data`
+
+Click the grey Analysis button
+
+This will load the output into the `res` and `op` sheets
+
+These will be then used for analysis in `EDA.rmd`
+
 
