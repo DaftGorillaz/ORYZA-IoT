@@ -10,14 +10,14 @@
 #           WCAD = WCR_Tomasella1(SAND, CLAY, GWCFC),
 #           STC=get_STC(SAND, CLAY)) 
 
-
-Soil_by_loc <- soil_data %>%
-    group_by(LOC_ID, DEPTH_range) %>%
-    summarize_if(is.numeric, mean)%>%
-    mutate(ID=LOC_ID, STC=get_STC(SAND, CLAY))%>%
-    ungroup() %>%
-    as.data.frame()%>%
-    split(.$ID)
+# 
+# Soil_by_loc <- soil_data %>%
+#     group_by(LOC_ID, DEPTH_range) %>%
+#     summarize_if(is.numeric, mean)%>%
+#     mutate(ID=LOC_ID, STC=get_STC(SAND, CLAY))%>%
+#     ungroup() %>%
+#     as.data.frame()%>%
+#     split(.$ID)
 
 
 
