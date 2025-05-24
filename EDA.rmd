@@ -1,0 +1,59 @@
+---
+title: "Explatory Data Analysis on Datasets"
+author: "Lance Salmingo"
+date: "23-05-2025"
+output:
+  html_document:
+    code_folding: show
+    toc: true
+    toc_float: true
+    theme: flatly
+    highlight: haddock
+---
+
+For this project you would need to install the following packages if you haven't already:
+```
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("conflicted")
+install.packages("lubridate")
+install.packages("ggpubr")
+```
+
+# Setup
+```{r setup}
+# Load libraries
+
+library(tidyverse)  # For data wrangling
+library(ggplot2)    # For visualisation
+library(conflicted) # For handling library conflicts
+library(lubridate)  # For parsing date values
+library(ggpubr)     # For stat_cor()
+
+# Load functions to create input files for ORYZA
+source("ORYZA_Model_RTOOLS/Make_EXP_ORYZA.R")
+source("ORYZA_Model_RTOOLS/Make_EXP_ORYZA.R")
+
+# Prefer dplyr
+conflict_prefer("filter",  "dplyr")
+conflict_prefer("select",  "dplyr")
+conflict_prefer("lag",     "dplyr")
+conflict_prefer("summarise", "dplyr")
+
+# Knitr options
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, message = FALSE)
+```
+
+# Read datasets
+```{r}
+# Read csv files
+iot_data <- read_csv("./datasets/IoTProcessed_Data.csv")
+
+head(iot_data)
+```
+
+# Explore IoT Dataset
+```{r}
+df <- iot_data %>%
+  mutate(date = ymd_hms(date))
+```
