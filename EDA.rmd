@@ -11,7 +11,7 @@ output:
     highlight: haddock
 ---
 
-For this project you would need to install the following packages if you haven't already:
+For this project you would need to install the following packages:
 ```
 install.packages("tidyverse")
 install.packages("ggplot2")
@@ -47,11 +47,16 @@ knitr::opts_chunk$set(echo = TRUE, error = TRUE, message = FALSE)
 ```
 
 # Read datasets
-```{r}
+```{r message=FALSE}
 # Read csv files
 iot_data <- read_csv("./datasets/IoTProcessed_Data.csv")
-res_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", sheet = "res", skip = 1)
-op_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", sheet = "op")
+res_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", 
+                       sheet = "res", skip = 1)
+op_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm", 
+                      sheet = "op")
+
+weather_data <- read_csv("./datasets/weather_input.csv")
+soil_data <- read_csv("./datasets/soil_input.csv")
 
 # Fix column naming
 iot_data <- iot_data %>%
@@ -59,15 +64,14 @@ iot_data <- iot_data %>%
     temperature = tempreature
   )
 
-head(iot_data)
-head(res_data)
-head(op_data)
+iot_data
 ```
-IoTProcessed Data 
 
 # Explore IoT Dataset
+IoTProcessed Data was obtained from 
 ```{r, message=FALSE, warning=FALSE}
-# Since ORYZA takes daily values we get group by day and get the mean values of each parameter
+# Since ORYZA takes daily values we get group by day and get the mean
+# values of each parameter
 iot_daily <- iot_data %>%
   # 1) Extract the calendar day from your POSIXct
   mutate(day = as.Date(date)) %>%
@@ -77,38 +81,107 @@ iot_daily <- iot_data %>%
   summarise(
     min_temp = min(temperature, na.rm = TRUE),
     max_temp = max(temperature, na.rm = TRUE),
-    mean_temp = mean(temperature, na.rm = TRUE)
-    
+    mean_h = mean(humidity, na.rm = TRUE)
   ) %>%
   ungroup()
 
 # Inspect
 print(iot_daily)
 
-# Graph
-daily_long <- iot_daily %>%
-  pivot_longer(
-    cols      = c(min_temp, mean_temp, max_temp),
-    names_to  = "stat",
-    values_to = "temp"
-  )
-
-# 2) Plot
-ggplot(daily_long, aes(x = day, y = temp, color = stat)) +
-  geom_line(size = 0.8) +
+ggplot(iot_daily, aes(x = day)) +
+  # ribbon for temperature
+  geom_ribbon(aes(ymin = min_temp,
+                  ymax = max_temp),
+              fill  = "firebrick",
+              alpha = 0.5) +
+  # line for humidity, but we’ll rescale it to sit on the same primary axis
+  geom_line(aes(y = mean_h * (max(iot_daily$max_temp)/100)),
+            color = "steelblue",
+            size  = 1) +
+  
+  # primary axis is temperature
+  scale_y_continuous(
+    name     = "Temperature (°C)",
+    # mirror secondary axis by undoing the scale factor
+    sec.axis = sec_axis(~ . * (100 / max(iot_daily$max_temp)),
+                        name = "Humidity (%)")
+  ) +
+  
   labs(
     x     = "Date",
-    y     = "Temperature (°C)",
-    linetype = "Statistic",
-    title = "Daily Min, Mean & Max Temperature"
+    title = "Daily Min–Max Temperature & Mean Humidity"
   ) +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    legend.position = "bottom"
+    axis.text.x     = element_text(angle = 45, hjust = 1),
+    legend.position = "none"
   )
 ```
+The red ribbon is the minimum and max temperature within the day and the blue line is the humidity.
+
+# Using RTools to create input files
+
+Inspecting the sample of weather and soil data
+```{r}
+head(weather_data)
+```
+From here we can see the daily values for maximum and minimum temperature within
+the day. As well as rain in mm, solar radiation, and relative humidity.
+
+Solar radiation and rain can be gathered from other IoT sensors but as of the
+current dataset we have, we can use the dataset to construct the same table
+to get the max-min temperature and humidity
+
+```{r}
+head(iot_daily)
+
+iot_input <- iot_daily %>%
+  mutate(
+    day = format(day, "%m/%d/%Y")
+  ) %>%
+  rename(
+    DATE = day,
+    TMAX = max_temp,
+    TMIN = min_temp,
+    RHUM = mean_h
+  )
+
+iot_input
+```
+Here we can see that from the IoT data we can replicate the needed data to
+create the input for weather.
+
+For the demonstration we would use the sample data weather_data.
+Assuming that these were generated from IoT sensors
+
+```{r warning=FALSE, message=FALSE}
+head(weather_data)
+make_wth_oryza(weather_data, "./datasets", "LBPH", 5.125, 119.875, 29.96, 1)
+
+
+wth_input <- read_delim("./datasets/WTH/LBPH1.013",
+                 delim     = ",",
+                 col_names = FALSE)
+
+wth_input
+```
+As seen here the sample weather_data has been converted to the input for the
+model as wth_input.
+
+This will convert the weather data into a format that ORYZA will take as input.
+
+
 # Explore res dataset
+This dataset contains the daily output of the model during the simulation.
+TIME      = Day number
+CROPSTA   = growth status (1 for sowing, 
+                           2 for seed bed,
+                           3 for transplanting,
+                           4 for main field)
+TMIN      = Daily min temperature
+TMAX      = Daily max temperature
+SON       = Total soil organic nitrogen
+WRR14     = Grain yield 14% of moisture
 ```{r}
 head(res_data)
 names(res_data)
@@ -117,6 +190,48 @@ res <- res_data %>%
   mutate(across(everything(), as.numeric))
 
 res
-# Plot
-ggplot
+res %>%
+  pivot_longer(
+    cols      = c(TMIN, TMAX, SON, WRR14),
+    names_to  = "Metric",
+    values_to = "Value"
+  ) %>%
+  ggplot(aes(x = TIME, y = Value)) +
+    geom_line() +
+    facet_wrap(~ Metric, scales = "free_y", ncol = 1) +
+    labs(
+      x     = "Day Number",
+      y     = NULL,
+      title = "TMIN, TMAX, SON & WRR14 Over Time"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+# Explore op dataset
+This dataset contains values that are summarised in the season.
+Some of the values are:
+EMD     = Julian day of emergence
+DAE     = Days after emergence
+WRR14   = Grain yield with 14% moisture
+RAINCUM = Accumulative rainfall in main field
+IRCUM   = Accumulative irrigation in main field
+SOC     = Soil organic carbon content at the end of season
+SON     = Soil organic nitrogen content at the end of season
+S_CO2C  = Total CO2 loss
+S_N2ON  = Total N2O loss
+
+
+
+```{r}
+names(op_data)
+
+head(op_data)
+
+op_data %>%
+  select(
+    EMD, DAE, WRR14, RAINCUM, IRCUM, SOC, SON, S_CO2C, S_N2ON
+  )
+```
+The model has much more variables which provide information about the 
+quality of yield and performance of the crop during the season.
+
