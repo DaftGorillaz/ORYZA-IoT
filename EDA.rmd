@@ -34,7 +34,6 @@ library(readxl)     # For reading excel files
 # Load functions to create input files for ORYZA
 source("ORYZA_Model_RTOOLS/Make_EXP_ORYZA.R")
 source("ORYZA_Model_RTOOLS/Make_WTH_ORYZA.R")
-source("ORYZA_Model_RTOOLS/Make_SOIL_ORYZA.R")
 
 # Prefer dplyr
 conflict_prefer("filter",  "dplyr")
@@ -56,7 +55,6 @@ op_data <- read_excel("./ORYZA_v3.5/ORYZA Analysis Tool(v4.2).xlsm",
                       sheet = "op")
 
 weather_data <- read_csv("./datasets/weather_input.csv")
-soil_data <- read_csv("./datasets/soil_input.csv")
 
 # Fix column naming
 iot_data <- iot_data %>%
@@ -68,7 +66,7 @@ iot_data
 ```
 
 # Explore IoT Dataset
-IoTProcessed Data was obtained from 
+
 ```{r, message=FALSE, warning=FALSE}
 # Since ORYZA takes daily values we get group by day and get the mean
 # values of each parameter
@@ -81,13 +79,17 @@ iot_daily <- iot_data %>%
   summarise(
     min_temp = min(temperature, na.rm = TRUE),
     max_temp = max(temperature, na.rm = TRUE),
-    mean_h = mean(humidity, na.rm = TRUE)
+    mean_h = mean(humidity, na.rm = TRUE),
+    mean_n = mean(N, na.rm = TRUE),
+    mean_p = mean(P, na.rm = TRUE),
+    mean_k = mean(K, na.rm = TRUE)
   ) %>%
   ungroup()
 
 # Inspect
 print(iot_daily)
 
+# Plot Temperature and Humidity
 ggplot(iot_daily, aes(x = day)) +
   # ribbon for temperature
   geom_ribbon(aes(ymin = min_temp,
@@ -116,6 +118,35 @@ ggplot(iot_daily, aes(x = day)) +
     axis.text.x     = element_text(angle = 45, hjust = 1),
     legend.position = "none"
   )
+
+
+# 1) Pivot to long form
+daily_long <- iot_daily %>%
+  pivot_longer(
+    cols      = c(mean_n, mean_p, mean_k),
+    names_to  = "Nutrient",
+    values_to = "Concentration"
+  )
+
+# 2) Overlayed line plot
+ggplot(daily_long, aes(x = day, y = Concentration, color = Nutrient)) +
+  geom_line(size = 0.8) +
+  scale_x_date(
+    date_labels = "%b %Y",    # e.g. "Nov 2023"
+    date_breaks = "1 month"
+  ) +
+  labs(
+    title = "Daily Mean N, P & K Over Time",
+    x     = "Date",
+    y     = "Mean Concentration",
+    color = "Nutrient"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x     = element_text(angle = 45, hjust = 1),
+    legend.position = "bottom"
+  )
+
 ```
 The red ribbon is the minimum and max temperature within the day and the blue line is the humidity.
 
